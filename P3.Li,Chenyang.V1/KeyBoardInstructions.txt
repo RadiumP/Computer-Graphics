@@ -1,0 +1,7 @@
+i = up
+k = down
+j = left
+l = right
+b = bump map
+p = perlin noise
+d = default shader

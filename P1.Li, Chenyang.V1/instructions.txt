@@ -1,0 +1,24 @@
+1.To flip picture.
+  In order to demonstrate that the program can flip the background picture.
+  I left the starting picture with the original one. To flip the picture,  
+  follow the steps.
+  a.Use right click to display the menu.
+  b.Use the submenu 'Image'to select '1.png'.
+  c.The picture flips.
+
+
+
+2.To draw things.
+    a.Use right click to display the menu.
+    b.Use the submenu 'Draw' to select 'Circle','Square' or 'Line' to display
+    either circle or square or line.
+    c.The shape is drawn in the index card.
+    PS:The objects will look better if you flip the '1.png' first.
+
+3.To get RGB
+    You can left-click on the screen to show the (x,y) and the RGB.
+    Using the test.png to test the click is recommended.
+    a.Use right click to display the menu.
+    b.Use the submenu 'Image'to select 'test.png'.
+    c.Left-click the screen.
+    d.Get the info from the console.

@@ -1,0 +1,31 @@
+﻿生成启动时间为 2014/9/1 20:27:30。
+     1>项目“E:\ASU\cg CSE 598\A1\Intro-2014\Intro-2014\basics.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Release\\" /Fd".\Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt basics.c stb_image.c
+         basics.c
+     1>basics.c(171): warning C4013: “stbi_load”未定义；假设外部返回 int
+     1>basics.c(171): warning C4047: “=”:“unsigned char *”与“int”的间接级别不同
+     1>basics.c(298): warning C4101: “b”: 未引用的局部变量
+     1>basics.c(298): warning C4101: “g”: 未引用的局部变量
+     1>basics.c(308): warning C4028: 形参 2 与声明不同
+     1>basics.c(363): warning C4113: “void (__cdecl *)()”和“void (__cdecl *)(void)”的参数列表不同
+     1>basics.c(365): warning C4113: “void (__cdecl *)()”和“void (__cdecl *)(void)”的参数列表不同
+         stb_image.c
+     1>stb_image.c(559): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 参见“fopen”的声明
+     1>stb_image.c(626): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 参见“fopen”的声明
+     1>stb_image.c(664): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 参见“fopen”的声明
+     1>stb_image.c(4566): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 参见“fopen”的声明
+         正在生成代码...
+       Link:
+         G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Release\basics.exe" /INCREMENTAL:NO /NOLOGO odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\Release\basics.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Release\basics.lib" /MACHINE:X86 /SAFESEH .\Release\basics.obj
+         .\Release\stb_image.obj
+         basics.vcxproj -> E:\ASU\cg CSE 598\A1\Intro-2014\Intro-2014\.\Release\basics.exe
+     1>已完成生成项目“E:\ASU\cg CSE 598\A1\Intro-2014\Intro-2014\basics.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.65

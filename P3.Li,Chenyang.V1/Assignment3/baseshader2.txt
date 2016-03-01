@@ -1,0 +1,54 @@
+varying vec3 N;
+varying vec3 v;    
+
+uniform sampler2D color_texture;
+
+uniform vec4 color1 = vec4(1.0, 0.0, 0.0, 1.0);
+uniform vec4 color2 = vec4(1.0, 1.0, 1.0, 1.0);
+ 
+out vec4 colorOut;
+
+void main (void)  
+{  
+
+   //Ross: Here's a hint on how to get the light source position
+    vec3 lp = gl_LightSource[1].position.xyz; 
+   vec3 ld = normalize( -lp + v); 
+    vec3 ed = normalize(v );
+    vec3 r = normalize(-reflect(ld,N));
+		
+   //Ross: V is the view direction vector and we are in Eye Coordinates, so EyePos is (0,0,0)  
+ 
+   //calculate Ambient Term:  
+     vec4 la = gl_FrontLightProduct[1].ambient;
+    //  vec4 la = gl_FrontMaterial.ambient;
+   
+    
+   //calculate Diffuse Term:  
+    vec4 lf = gl_FrontLightProduct[1].diffuse * max(dot(N,ld),0.0);
+   // vec4 lf = gl_FrontMaterial.diffuse * max(dot(N,ld),0.0);
+   //calculate Specular Term:
+    vec4 ls = gl_FrontLightProduct[1].specular * pow(max(dot(r,ed),0.0),12.8);
+   //vec4 ls = gl_FrontMaterial.specular * pow(max(dot(r,ed),0.0),12.8);
+  
+ // write Total Color:  
+   //colorOut = gl_FrontLightModelProduct.sceneColor;
+
+   //Ross: If I want to sample my texture, I need to sample it at the (s,t) coordinate of my texture coordinate
+   //texture2D(color_texture, gl_TexCoord[0].st);  
+
+   //Ross: Generic color output is now making all geometry blue
+   
+
+	//colorOut = gl_FrontLightModelProduct.sceneColor + la + lf + ls;
+for(int i = 0;i<8;i++)
+{
+	if(mod(i,2)==0){
+	 if(i*0.125<=gl_TexCoord[0].t && gl_TexCoord[0].t<(i+1)*0.125)colorOut = color1 + lf;
+	}
+	else{
+		if(i*0.125<=gl_TexCoord[0].t && gl_TexCoord[0].t<(i+1)*0.125)colorOut = color2 + lf;
+            }
+}
+	
+}    

@@ -1,0 +1,14 @@
+Right-button menu:
+
+a. Image: 1 uphill: change the background pic to  'hill'
+	  2 ground: change the pic to 'flat ground'
+b. StickManMove: Default: the stickman will be doing exercises. If you left-click the screen, it will generate new one. 
+			The screen will only contain 3 stickmen at most. The stickmen will move in both 'uphill' and 'ground'.
+		 Walking: only one stickman will walk in the index card. If in 'ground', the stickman will go back and forth on the ground.
+			 If in 'uphill', the stickman will climb up and down.
+c. Filled: On: the index card will be filled in blue
+	   Off: the color will be turned off.
+  
+
+   
+   

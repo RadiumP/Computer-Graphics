@@ -1,0 +1,46 @@
+varying vec3 N;
+varying vec3 v;    
+
+uniform sampler2D color_texture;
+
+uniform vec4 color1 = vec4(0.0, 0.0, 1.0, 1.0);
+uniform vec4 color2 = vec4(0.3, 0.7, 0.5, 1.0);
+ 
+out vec4 colorOut;
+
+void main (void)  
+{  
+
+   //Ross: Here's a hint on how to get the light source position
+    vec3 lp = gl_LightSource[0].position.xyz; 
+    vec3 ld = normalize( -lp + v); 
+    vec3 ed = normalize(v );
+    vec3 r = normalize(-reflect(ld,N));
+		
+   //Ross: V is the view direction vector and we are in Eye Coordinates, so EyePos is (0,0,0)  
+ 
+   //calculate Ambient Term:  
+    vec4 la = gl_FrontMaterial.ambient;
+    vec4 lf = gl_FrontMaterial.diffuse * max(dot(N,ld),0.0);
+    vec4 ls = gl_FrontMaterial.specular * pow(max(dot(r,ed),0.0),gl_FrontMaterial.shininess);
+   //calculate Diffuse Term:  
+   
+   //calculate Specular Term:
+
+   // write Total Color:  
+   //colorOut = gl_FrontLightModelProduct.sceneColor;
+
+   //Ross: If I want to sample my texture, I need to sample it at the (s,t) coordinate of my texture coordinate
+   //texture2D(color_texture, gl_TexCoord[0].st);  
+     float s,t;
+     //s= (atan(N.z, N.y) / 3.1415926 + 1.0) * 0.5; 
+    // t= asin(-N.x) / 3.1415926 + 0.5;
+	
+    vec2 texture = vec2(gl_TexCoord[0].s, gl_TexCoord[0].t);
+                                  
+	
+   //Ross: Generic color output is now making all geometry blue
+   //colorOut = texture2D(color_texture, longitudeLatitude) ;  
+     gl_FragColor = texture2D(color_texture, texture);
+
+}    

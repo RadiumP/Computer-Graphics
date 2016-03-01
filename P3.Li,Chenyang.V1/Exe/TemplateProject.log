@@ -1,0 +1,158 @@
+﻿生成启动时间为 2014/11/6 4:23:11。
+     1>项目“C:\Users\YoungLee\Desktop\Assignment3113\Assignment3113\Assignment3\TemplateProject.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Ifreeglut/include /Iglew/include /Icwc/include /Zi /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D FREEGLUT_STATIC /D GLEW_STATIC /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt glew\source\glew.c freeglut\source\freeglut_callbacks.c freeglut\source\freeglut_cursor.c freeglut\source\freeglut_display.c freeglut\source\freeglut_ext.c freeglut\source\freeglut_font.c freeglut\source\freeglut_font_data.c freeglut\source\freeglut_gamemode.c freeglut\source\freeglut_geometry.c freeglut\source\freeglut_glutfont_definitions.c freeglut\source\freeglut_init.c freeglut\source\freeglut_joystick.c freeglut\source\freeglut_main.c freeglut\source\freeglut_menu.c freeglut\source\freeglut_misc.c freeglut\source\freeglut_overlay.c freeglut\source\freeglut_state.c freeglut\source\freeglut_stroke_mono_roman.c freeglut\source\freeglut_stroke_roman.c freeglut\source\freeglut_structure.c freeglut\source\freeglut_teapot.c freeglut\source\freeglut_videoresize.c freeglut\source\freeglut_window.c perlin.c stb_image.c
+         glew.c
+         freeglut_callbacks.c
+         freeglut_cursor.c
+         freeglut_display.c
+         freeglut_ext.c
+         freeglut_font.c
+         freeglut_font_data.c
+         freeglut_gamemode.c
+     1>freeglut\source\freeglut_gamemode.c(394): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : 参见“sscanf”的声明
+     1>freeglut\source\freeglut_gamemode.c(395): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : 参见“sscanf”的声明
+     1>freeglut\source\freeglut_gamemode.c(396): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : 参见“sscanf”的声明
+     1>freeglut\source\freeglut_gamemode.c(397): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : 参见“sscanf”的声明
+     1>freeglut\source\freeglut_gamemode.c(398): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : 参见“sscanf”的声明
+     1>freeglut\source\freeglut_gamemode.c(399): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : 参见“sscanf”的声明
+     1>freeglut\source\freeglut_gamemode.c(400): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : 参见“sscanf”的声明
+         freeglut_geometry.c
+         freeglut_glutfont_definitions.c
+         freeglut_init.c
+     1>freeglut\source\freeglut_init.c(520): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(462) : 参见“getenv”的声明
+     1>freeglut\source\freeglut_init.c(524): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : 参见“sscanf”的声明
+     1>freeglut\source\freeglut_init.c(533): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdlib.h(462) : 参见“getenv”的声明
+     1>freeglut\source\freeglut_init.c(713): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : 参见“strtok”的声明
+     1>freeglut\source\freeglut_init.c(883): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(204) : 参见“strtok”的声明
+         freeglut_joystick.c
+     1>freeglut\source\freeglut_joystick.c(1002): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>freeglut\source\freeglut_joystick.c(1012): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>freeglut\source\freeglut_joystick.c(1020): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : 参见“sprintf”的声明
+     1>freeglut\source\freeglut_joystick.c(1249): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(195) : 参见“strncpy”的声明
+         freeglut_main.c
+         freeglut_menu.c
+         freeglut_misc.c
+         freeglut_overlay.c
+         freeglut_state.c
+         freeglut_stroke_mono_roman.c
+         freeglut_stroke_roman.c
+         freeglut_structure.c
+         正在生成代码...
+         正在编译...
+         freeglut_teapot.c
+         freeglut_videoresize.c
+         freeglut_window.c
+         fgSetupPixelFormat(): there is still some work to do here!
+         perlin.c
+         stb_image.c
+     1>stb_image.c(559): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 参见“fopen”的声明
+     1>stb_image.c(626): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 参见“fopen”的声明
+     1>stb_image.c(664): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 参见“fopen”的声明
+     1>stb_image.c(4566): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : 参见“fopen”的声明
+         正在生成代码...
+         G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Ifreeglut/include /Iglew/include /Icwc/include /Zi /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _CONSOLE /D FREEGLUT_STATIC /D GLEW_STATIC /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHsc /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt cwc\source\glApplication.cpp cwc\source\glsl.cpp cwc\source\glutwindow.cpp cwc\source\glWindow.cpp main.cpp
+         glApplication.cpp
+         glsl.cpp
+     1>cwc\source\glsl.cpp(1351): warning C4244: “初始化”: 从“std::streamoff”转换到“unsigned long”，可能丢失数据
+     1>cwc\source\glsl.cpp(1353): warning C4244: “初始化”: 从“std::streamoff”转换到“unsigned long”，可能丢失数据
+         glutwindow.cpp
+         glWindow.cpp
+         main.cpp
+     1>main.cpp(109): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(110): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(111): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(112): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(128): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>main.cpp(136): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(137): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(138): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(139): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(149): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>main.cpp(153): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>main.cpp(160): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>main.cpp(161): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>main.cpp(167): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(168): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(169): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(170): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(187): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(188): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(189): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(190): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(202): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>main.cpp(203): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>main.cpp(207): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>main.cpp(214): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>main.cpp(220): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(221): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(222): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(223): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+     1>main.cpp(243): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>main.cpp(268): warning C4305: “参数”: 从“double”到“GLfloat”截断
+     1>main.cpp(428): warning C4244: “-=”: 从“double”转换到“float”，可能丢失数据
+     1>main.cpp(429): warning C4244: “-=”: 从“double”转换到“float”，可能丢失数据
+     1>main.cpp(430): warning C4244: “-=”: 从“double”转换到“float”，可能丢失数据
+     1>main.cpp(431): warning C4244: “-=”: 从“double”转换到“float”，可能丢失数据
+     1>main.cpp(437): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+     1>main.cpp(438): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+     1>main.cpp(439): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+     1>main.cpp(440): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+         正在生成代码...
+       Link:
+         G:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Release\TemplateProject.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Release\TemplateProject.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Release\TemplateProject.lib" /MACHINE:X86 /SAFESEH Release\glew.obj
+         Release\freeglut_callbacks.obj
+         Release\freeglut_cursor.obj
+         Release\freeglut_display.obj
+         Release\freeglut_ext.obj
+         Release\freeglut_font.obj
+         Release\freeglut_font_data.obj
+         Release\freeglut_gamemode.obj
+         Release\freeglut_geometry.obj
+         Release\freeglut_glutfont_definitions.obj
+         Release\freeglut_init.obj
+         Release\freeglut_joystick.obj
+         Release\freeglut_main.obj
+         Release\freeglut_menu.obj
+         Release\freeglut_misc.obj
+         Release\freeglut_overlay.obj
+         Release\freeglut_state.obj
+         Release\freeglut_stroke_mono_roman.obj
+         Release\freeglut_stroke_roman.obj
+         Release\freeglut_structure.obj
+         Release\freeglut_teapot.obj
+         Release\freeglut_videoresize.obj
+         Release\freeglut_window.obj
+         Release\glApplication.obj
+         Release\glsl.obj
+         Release\glutwindow.obj
+         Release\glWindow.obj
+         Release\main.obj
+         Release\perlin.obj
+         Release\stb_image.obj
+         TemplateProject.vcxproj -> C:\Users\YoungLee\Desktop\Assignment3113\Assignment3113\Assignment3\Release\TemplateProject.exe
+     1>已完成生成项目“C:\Users\YoungLee\Desktop\Assignment3113\Assignment3113\Assignment3\TemplateProject.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:12.38
