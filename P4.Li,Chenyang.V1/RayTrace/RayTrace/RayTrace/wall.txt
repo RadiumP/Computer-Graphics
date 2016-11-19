@@ -1,0 +1,52 @@
+<triangle name="TriangleWallB">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+
+			<!-- First Vertex -->
+			<vertex index="0" material="Purple">
+				<position x="20.0" y="-4.7" z="-20.0"/>
+				<normal x="0.0" y="1.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Second Vertex -->
+			<vertex index="1" material="Purple">
+				<position x="20.0" y="-4.7" z="20.0"/>
+				<normal x="0.0" y="1.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Third Vertex -->
+			<vertex index="2" material="Purple">
+				<position x="20.0" y="20.0" z="-20.0"/>
+				<normal x="0.0" y="1.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+		</triangle>
+		<triangle name="TriangleWallB2">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+
+			<!-- First Vertex -->
+			<vertex index="0" material="Purple">
+				<position x="20.0" y="-4.7" z="20.0"/>
+				<normal x="0.0" y="1.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Second Vertex -->
+			<vertex index="1" material="Purple">
+				<position x="20.0" y="20.0" z="20.0"/>
+				<normal x="0.0" y="1.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Third Vertex -->
+			<vertex index="2" material="Purple">
+				<position x="20.0" y="20.0" z="-20.0"/>
+				<normal x="0.0" y="1.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+		</triangle>

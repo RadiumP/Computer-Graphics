@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Scene Description in XML -->
+<scene desc="Simple Test Scene - Triangle + Sphere."
+	   author="Dr. Ross">
+	<!-- Background Color and Ambient Light Property -->
+	<background>
+		<color red="0.0" green="0.0" blue="1.0"/>
+		<ambientLight red="0.0" green="0.0" blue="0.4"/>
+	</background>
+
+	<!-- Camera Description -->
+	<camera fieldOfView="45.0" nearClip="0.1" farClip="100.0">
+		<position x="10.0" y="10.0" z="30.0"/>
+		<target x="1.0" y="10.0" z="-1.0"/>
+		<up x="0.0" y="1.0" z="0.0"/>
+	</camera>
+
+	<!-- Light Sources Collection -->
+	<light_list>
+		<!-- Light Description, Color & Position -->
+		<light>
+			<color red="0.5" green="0.5" blue="0.5"/>
+			<position x="0.0" y="30.0" z="0.0"/>
+			<attenuation constant="0.10" linear="0.03" quadratic="0.00"/>
+		</light>
+		
+		
+		
+		
+	</light_list>
+
+	<!-- Material Type Collection -->
+	<material_list>
+		<!-- Material Descriptions -->
+		
+
+		<material name="Red">
+			<texture filename=""/>
+			<ambient red="0.5" green="0.0" blue="0.0"/>
+			<diffuse red="1.0" green="0.0" blue="0.0"/>
+			<specular red="0.5" green="0.0" blue="0.0" shininess="5.0"/>
+			<transparent red="0.0" green="0.0" blue="0.0"/>
+			<reflective red="0.1" green="0.1" blue="0.1"/>
+			<refraction_index red="0.0" green="0.0" blue="0.0"/>
+		</material>
+
+		<material name="White">
+			<texture filename=""/>
+			<ambient red="0.5" green="0.5" blue="0.5"/> 
+			<diffuse red="1.0" green="1.0" blue="1.0"/>
+			<specular red="1.0" green="1.0" blue="1.0" shininess="1.0"/>
+			<transparent red="0.0" green="0.0" blue="0.0"/>
+			<reflective red="0.1" green="0.1" blue="0.1"/>
+			<refraction_index red="0.0" green="0.0" blue="0.0"/>
+		</material>
+		<material name="Bronze">
+			<texture filename=""/>
+			<ambient red="0.2125" green="0.1275" blue="0.054"/>
+			<diffuse red="0.714" green="0.4284" blue="0.18144"/>
+			<specular red="0.393548" green="0.271906" blue="0.166721" shininess="25.6"/>
+			<transparent red="0.0" green="0.0" blue="0.0"/>
+			<reflective red="0.1" green="0.1" blue="0.1"/>
+			<refraction_index red="0.0" green="0.0" blue="0.0"/>
+		</material>
+		<material name="Gold">
+			<texture filename=""/>
+			<ambient red="0.24725" green="0.1995" blue="0.0745"/>
+			<diffuse red="0.75164" green="0.60648" blue="0.22648"/>
+			<specular red="0.628281" green="0.555802" blue="0.366065" shininess="51.2"/>
+			<transparent red="0.0" green="0.0" blue="0.0"/>
+			<reflective red="0.1" green="0.1" blue="0.1"/>
+			<refraction_index red="0.0" green="0.0" blue="0.0"/>
+		</material>
+		<material name="Silver">
+			<texture filename=""/>
+			<ambient red="0.19225" green="0.19225" blue="0.19225"/>
+			<diffuse red="0.50754" green="0.50754" blue="0.50754"/>
+			<specular red="0.508273" green="0.508273" blue="0.508273" shininess="51.2"/>
+			<transparent red="0.0" green="0.0" blue="0.0"/>
+			<reflective red="0.1" green="0.1" blue="0.1"/>
+			<refraction_index red="0.0" green="0.0" blue="0.0"/>
+		</material>
+		<material name="Purple">
+			<texture filename=""/>
+			<ambient red="0.25" green="0.0" blue="0.25"/>
+			<diffuse red="0.5" green="0.0" blue="0.5"/>
+			<specular red="0.1" green="0.00" blue="0.1" shininess="2.0"/>
+		</material>
+	</material_list>
+
+	<!-- List of Scene Objects -->
+	<object_list>
+		<!-- Sphere Object -->
+
+
+		<triangle name="TriangleCeiling">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+
+			<!-- First Vertex -->
+			<vertex index="0" material="Red">
+				<position x="-30.0" y="30.0" z="-30.0"/>
+				<normal x="0.0" y="-1.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Second Vertex -->
+			<vertex index="1" material="Red">
+				<position x="-30.0" y="30.0" z=30.0"/>
+				<normal x="0.0" y="-1.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Third Vertex -->
+			<vertex index="2" material="Red">
+				<position x="30.0" y="30.0" z="-30.0"/>
+				<normal x="0.0" y="-1.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+		</triangle>
+		<triangle name="TriangleCeiling2">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+
+			<!-- First Vertex -->
+			<vertex index="0" material="Red">
+				<position x="30.0" y="30.0" z="30.0"/>
+				<normal x="0.0" y="-1.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Second Vertex -->
+			<vertex index="1" material="Red">
+				<position x="-30.0" y="30.0" z="30.0"/>
+				<normal x="0.0" y="-1.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Third Vertex -->
+			<vertex index="2" material="Red">
+				<position x="30.0" y="30.0" z="-30.0"/>
+				<normal x="0.0" y="-1.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+		</triangle>
+
+
+		<sphere name="Sphere1" material="Silver" radius="5.0">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+
+			<center x="0.0" y="0.0" z="-1.0"/>
+		</sphere>
+		<sphere name="Sphere1" material="Bronze" radius="3.0">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+
+			<center x="0.0" y="8.0" z="-1.0"/>
+		</sphere>
+		<sphere name="Sphere1" material="Gold" radius="1.0">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+
+			<center x="0.0" y="12.0" z="-1.0"/>
+		</sphere>
+		
+		
+		
+
+		
+		
+
+
+
+		<triangle name="TriangleFloor">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+
+			<!-- First Vertex -->
+			<vertex index="0" material="Red">
+				<position x="-30.0" y="-4.7" z="-30.0"/>
+				<normal x="0.0" y="1.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Second Vertex -->
+			<vertex index="1" material="Red">
+				<position x="-30.0" y="-4.7" z=30.0"/>
+				<normal x="0.0" y="1.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Third Vertex -->
+			<vertex index="2" material="Red">
+				<position x="30.0" y="-4.7" z="-30.0"/>
+				<normal x="0.0" y="1.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+		</triangle>
+		<triangle name="TriangleFloor2">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+
+			<!-- First Vertex -->
+			<vertex index="0" material="Red">
+				<position x="30.0" y="-4.7" z="30.0"/>
+				<normal x="0.0" y="1.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Second Vertex -->
+			<vertex index="1" material="Red">
+				<position x="-30.0" y="-4.7" z="30.0"/>
+				<normal x="0.0" y="1.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Third Vertex -->
+			<vertex index="2" material="Red">
+				<position x="30.0" y="-4.7" z="-30.0"/>
+				<normal x="0.0" y="1.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+		</triangle>
+
+
+
+		
+		
+		
+
+		<triangle name="TriangleWallE">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+
+			<!-- First Vertex -->
+			<vertex index="0" material="Silver">
+				<position x="-30.0" y="-4.7" z="-30.0"/>
+				<normal x="1.0" y="0.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Second Vertex -->
+			<vertex index="1" material="Silver">
+				<position x="-30.0" y="-4.7" z="30.0"/>
+				<normal x="1.0" y="0.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Third Vertex -->
+			<vertex index="2" material="Silver">
+				<position x="-30.0" y="30.0" z="-30.0"/>
+				<normal x="1.0" y="0.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+		</triangle>
+		
+		<triangle name="TriangleWallE2">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+
+			<!-- First Vertex -->
+			<vertex index="0" material="Silver">
+				<position x="-30.0" y="-4.7" z="30.0"/>
+				<normal x="1.0" y="0.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Second Vertex -->
+			<vertex index="1" material="Silver">
+				<position x="-30.0" y="30.0" z="30.0"/>
+				<normal x="1.0" y="0.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Third Vertex -->
+			<vertex index="2" material="Silver">
+				<position x="-30.0" y="30.0" z="-30.0"/>
+				<normal x="1.0" y="0.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+		</triangle>
+		
+		<triangle name="TriangleWallN">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+
+			<!-- First Vertex -->
+			<vertex index="0" material="Purple">
+				<position x="-30.0" y="-4.7" z="-30.0"/>
+				<normal x="0.0" y="0.0" z="1.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Second Vertex -->
+			<vertex index="1" material="Purple">
+				<position x="30.0" y="-4.7" z="-30.0"/>
+				<normal x="0.0" y="0.0" z="1.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Third Vertex -->
+			<vertex index="2" material="Purple">
+				<position x="30.0" y="30.0" z="-30.0"/>
+				<normal x="0.0" y="0.0" z="1.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+		</triangle>
+		<triangle name="TriangleWallN2">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+
+			<!-- First Vertex -->
+			<vertex index="0" material="Purple">
+				<position x="-30.0" y="-4.7" z="-30.0"/>
+				<normal x="0.0" y="0.0" z="1.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Second Vertex -->
+			<vertex index="1" material="Purple">
+				<position x="-30.0" y="30.0" z="-30.0"/>
+				<normal x="0.0" y="0.0" z="1.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Third Vertex -->
+			<vertex index="2" material="Purple">
+				<position x="30.0" y="30.0" z="-30.0"/>
+				<normal x="0.0" y="0.0" z="1.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+		</triangle>
+
+		<triangle name="TriangleWallS">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+
+			<!-- First Vertex -->
+			<vertex index="0" material="Silver">
+				<position x="-30.0" y="-4.7" z="30.0"/>
+				<normal x="0.0" y="0.0" z="-1.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Second Vertex -->
+			<vertex index="1" material="Silver">
+				<position x="30.0" y="-4.7" z="30.0"/>
+				<normal x="0.0" y="0.0" z="-1.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Third Vertex -->
+			<vertex index="2" material="Silver">
+				<position x="30.0" y="30.0" z="30.0"/>
+				<normal x="0.0" y="0.0" z="-1.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+		</triangle>
+		<triangle name="TriangleWallS2">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+
+			<!-- First Vertex -->
+			<vertex index="0" material="Silver">
+				<position x="-30.0" y="-4.7" z="30.0"/>
+				<normal x="0.0" y="0.0" z="-1.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Second Vertex -->
+			<vertex index="1" material="Silver">
+				<position x="-30.0" y="30.0" z="30.0"/>
+				<normal x="0.0" y="0.0" z="-1.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Third Vertex -->
+			<vertex index="2" material="Silver">
+				<position x="30.0" y="30.0" z="30.0"/>
+				<normal x="0.0" y="0.0" z="-1.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+		</triangle>
+
+
+	<triangle name="TriangleWallW">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+
+			<!-- First Vertex -->
+			<vertex index="0" material="Purple">
+				<position x="30.0" y="-4.7" z="-30.0"/>
+				<normal x="-1.0" y="0.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Second Vertex -->
+			<vertex index="1" material="Purple">
+				<position x="30.0" y="-4.7" z="30.0"/>
+				<normal x="-1.0" y="0.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Third Vertex -->
+			<vertex index="2" material="Purple">
+				<position x="30.0" y="30.0" z="-30.0"/>
+				<normal x="-1.0" y="0.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+		</triangle>
+		<triangle name="TriangleWallW2">
+			<scale x="1.0" y="1.0" z="1.0"/>
+			<rotation x="0.0" y="0.0" z="0.0"/>
+			<position x="0.0" y="0.0" z="0.0"/>
+
+			<!-- First Vertex -->
+			<vertex index="0" material="Purple">
+				<position x="30.0" y="-4.7" z="30.0"/>
+				<normal x="-1.0" y="0.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Second Vertex -->
+			<vertex index="1" material="Purple">
+				<position x="30.0" y="30.0" z="30.0"/>
+				<normal x="-1.0" y="0.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+
+			<!-- Third Vertex -->
+			<vertex index="2" material="Purple">
+				<position x="30.0" y="30.0" z="-30.0"/>
+				<normal x="-1.0" y="0.0" z="0.0"/>
+				<texture u="0.0" v="0.0"/>
+			</vertex>
+		</triangle>
+
+
+	</object_list>
+	
+<!-- End of Scene -->
+</scene>
